@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IncluyeWeb: Guía Multimedia Interactiva sobre Accesibilidad e Inclusión en Contenidos Digitales según pautas WCAG 2.2 AAA.">
+  <meta name="author" content="Samuel Eduardo Nossa Ramirez">
+  <title>IncluyeWeb | Inicio — Guía Multimedia de Accesibilidad Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <span class="brand-logo" aria-label="IncluyeWeb">
+          <span class="brand-badge" aria-hidden="true">IW</span>
+          <span class="brand-name">IncluyeWeb</span>
+        </span>
+        <span class="brand-subtitle">Guía Multimedia de Accesibilidad</span>
+      </div>
+
+      <div class="header-controls">
+        <p id="scene-indicator" class="location-indicator" aria-live="polite" aria-atomic="true">
+          Inicio
+        </p>
+        <button
+          type="button"
+          id="btn-home"
+          class="btn btn-secondary btn-home"
+          data-target="escena-1"
+          hidden
+        >
+          Menú principal
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content" tabindex="-1">
+    <div class="container">
+      <!-- Escena 1: Portada y menú modular -->
+      <section
+        id="escena-1"
+        class="scene is-active"
+        aria-labelledby="escena-1-titulo"
+        aria-hidden="false"
+      >
+        <div class="hero-card">
+          <p class="eyebrow-tag">
+            <span class="status-dot" aria-hidden="true"></span>
+            Estándar WCAG 2.2 · Nivel AAA
+          </p>
+          <h1 id="escena-1-titulo" class="hero-title" tabindex="-1">
+            Diseña contenidos digitales que todas las personas puedan usar
+          </h1>
+          <p class="hero-subtitle">
+            Aprende de forma práctica cómo aplicar color accesible, tipografía legible, texto alternativo,
+            subtítulos y navegación por teclado para crear recursos digitales inclusivos sin barreras.
+          </p>
+          <div class="hero-actions">
+            <button
+              type="button"
+              id="btn-start-tour"
+              class="btn btn-primary"
+              data-target="escena-2"
+            >
+              Iniciar recorrido guiado
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="modules-section" aria-labelledby="menu-modular-titulo">
+          <div class="section-header">
+            <h2 id="menu-modular-titulo" class="section-title">Acceso directo por módulos</h2>
+            <p class="section-description">
+              Elige cualquier módulo para explorar sus principios clave o sigue el recorrido guiado paso a paso.
+            </p>
+          </div>
+
+          <ul class="module-grid">
+            <li class="module-item">
+              <button
+                type="button"
+                class="module-card"
+                data-target="escena-2"
+              >
+                <span class="module-meta">Módulo 1 de 3</span>
+                <span class="module-title">1. Color y Contraste</span>
+                <span class="module-desc">
+                  Relaciones de contraste mínimas, independencia del color y estados visuales claros.
+                </span>
+                <span class="module-cta" aria-hidden="true">Explorar módulo &rarr;</span>
+              </button>
+            </li>
+
+            <li class="module-item">
+              <button
+                type="button"
+                class="module-card"
+                data-target="escena-3"
+              >
+                <span class="module-meta">Módulo 2 de 3</span>
+                <span class="module-title">2. Tipografía y Alt-Text</span>
+                <span class="module-desc">
+                  Lectura cómoda, jerarquía visual comprensible y descripciones alternativas efectivas.
+                </span>
+                <span class="module-cta" aria-hidden="true">Explorar módulo &rarr;</span>
+              </button>
+            </li>
+
+            <li class="module-item">
+              <button
+                type="button"
+                class="module-card"
+                data-target="escena-4"
+              >
+                <span class="module-meta">Módulo 3 de 3</span>
+                <span class="module-title">3. Subtítulos y Navegación</span>
+                <span class="module-desc">
+                  Contenidos audiovisuales accesibles, foco visible y uso completo mediante teclado.
+                </span>
+                <span class="module-cta" aria-hidden="true">Explorar módulo &rarr;</span>
+              </button>
+            </li>
+
+            <li class="module-item">
+              <button
+                type="button"
+                class="module-card module-card--highlight"
+                data-target="escena-5"
+              >
+                <span class="module-meta module-meta--success">Cierre práctico</span>
+                <span class="module-title">4. Checklist de 10 Puntos</span>
+                <span class="module-desc">
+                  Lista de verificación final para auditar y validar tus proyectos multimedia digitales.
+                </span>
+                <span class="module-cta" aria-hidden="true">Abrir checklist &rarr;</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Escena 2: Módulo 1 — Color y Contraste -->
+      <section
+        id="escena-2"
+        class="scene"
+        aria-labelledby="escena-2-titulo"
+        aria-hidden="true"
+        hidden
+      >
+        <article class="module-panel">
+          <p class="eyebrow-tag">Módulo 1 de 3</p>
+          <h2 id="escena-2-titulo" class="scene-title" tabindex="-1">
+            1. Color y Contraste
+          </h2>
+
+          <div class="didactic-block">
+            <p class="scene-lead">
+              Un contraste suficiente permite leer textos y reconocer controles incluso al usar pantallas bajo luz solar directa o con brillo reducido. Además, cerca del 8&nbsp;% de los hombres y el 0.5&nbsp;% de las mujeres presentan daltonismo, por lo que nunca debemos usar el color como único medio para comunicar estados o alertas.
+            </p>
+
+            <ul class="wcag-thresholds" aria-label="Umbrales de contraste WCAG 2.2 para texto normal">
+              <li class="wcag-threshold-item">
+                <span class="threshold-ratio">4.5:1</span>
+                <div class="threshold-copy">
+                  <strong>Nivel AA (WCAG 2.2)</strong>
+                  <span>Mínimo recomendado para texto normal en interfaces digitales.</span>
+                </div>
+              </li>
+              <li class="wcag-threshold-item wcag-threshold-item--aaa">
+                <span class="threshold-ratio threshold-ratio--aaa">7:1</span>
+                <div class="threshold-copy">
+                  <strong>Nivel AAA (WCAG 2.2)</strong>
+                  <span>Contraste óptimo para máxima legibilidad y menor fatiga visual.</span>
+                </div>
+              </li>
+              <li class="wcag-threshold-item">
+                <span class="threshold-ratio">Regla clave</span>
+                <div class="threshold-copy">
+                  <strong>No depender solo del color</strong>
+                  <span>Combina color con íconos, formas y etiquetas textuales claras.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bloque interactivo 1: Antes vs Después -->
+          <section class="interactive-block" aria-labelledby="contrast-demo-heading">
+            <div class="interactive-header">
+              <h3 id="contrast-demo-heading" class="interactive-title">
+                Comparador interactivo: Antes vs. Después
+              </h3>
+              <p class="interactive-desc">
+                Alterna entre ambos estados para comprobar cómo cambian la legibilidad del texto y la claridad del mensaje de alerta.
+              </p>
+            </div>
+
+            <div class="toggle-group" role="group" aria-label="Cambiar vista de la tarjeta de alerta">
+              <button
+                type="button"
+                id="btn-contrast-before"
+                class="btn btn-toggle is-active"
+                aria-pressed="true"
+                data-contrast-mode="before"
+              >
+                Antes (Inaccesible)
+              </button>
+              <button
+                type="button"
+                id="btn-contrast-after"
+                class="btn btn-toggle"
+                aria-pressed="false"
+                data-contrast-mode="after"
+              >
+                Después (Accesible)
+              </button>
+            </div>
+
+            <div class="demo-stage">
+              <div
+                id="contrast-demo-card"
+                class="contrast-demo-card contrast-demo-card--before"
+                role="region"
+                aria-label="Vista previa de tarjeta de alerta"
+              >
+                <span id="contrast-demo-icon" class="demo-alert-icon" aria-hidden="true" hidden>
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </span>
+                <div class="demo-alert-body">
+                  <p id="contrast-demo-label" class="demo-alert-label" hidden>
+                    Advertencia importante
+                  </p>
+                  <p class="demo-alert-text">
+                    Tu sesión finalizará en 2 minutos. Guarda tus cambios antes de continuar para no perder tu progreso.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                id="contrast-diagnostic"
+                class="diagnostic-panel diagnostic-panel--fail"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                <span class="diagnostic-badge" aria-hidden="true">Diagnóstico</span>
+                <p id="contrast-diagnostic-text" class="diagnostic-text">
+                  Ratio actual: 2.1:1 — No cumple WCAG (baja legibilidad y dependencia exclusiva del color)
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bloque interactivo 2: Simulador visual de daltonismo -->
+          <section class="interactive-block" aria-labelledby="cvd-demo-heading">
+            <div class="interactive-header">
+              <h3 id="cvd-demo-heading" class="interactive-title">
+                Simulador visual de daltonismo
+              </h3>
+              <p class="interactive-desc">
+                Activa el filtro de deuteranopía en tiempo real para observar por qué los indicadores que solo usan color pierden su significado, mientras que los elementos con ícono y texto siguen siendo comprensibles.
+              </p>
+            </div>
+
+            <!-- Filtro SVG inline oculto visualmente (sin display:none para asegurar aplicación en navegadores) -->
+            <svg class="svg-filters" aria-hidden="true" focusable="false">
+              <defs>
+                <filter id="deuteranopia-filter">
+                  <feColorMatrix
+                    type="matrix"
+                    values="0.625 0.375 0 0 0
+                            0.700 0.300 0 0 0
+                            0     0.300 0.700 0 0
+                            0     0     0     1 0"
+                  />
+                </filter>
+              </defs>
+            </svg>
+
+            <fieldset class="cvd-fieldset">
+              <legend class="cvd-legend">Modo de visión simulada</legend>
+              <div class="cvd-options">
+                <label class="cvd-option" for="vision-normal">
+                  <input
+                    type="radio"
+                    id="vision-normal"
+                    name="cvd-mode"
+                    value="normal"
+                    checked
+                  >
+                  <span>Visión normal</span>
+                </label>
+
+                <label class="cvd-option" for="vision-deuteranopia">
+                  <input
+                    type="radio"
+                    id="vision-deuteranopia"
+                    name="cvd-mode"
+                    value="deuteranopia"
+                  >
+                  <span>Deuteranopía (dificultad para distinguir rojo y verde)</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <p id="cvd-status" class="cvd-status" aria-live="polite">
+              Filtro actual: Visión normal (sin alteración cromática).
+            </p>
+
+            <div id="cvd-preview-container" class="cvd-preview-container">
+              <div class="cvd-example-card">
+                <h4 class="cvd-example-title">Solo color (genera confusión)</h4>
+                <ul class="cvd-sample-list">
+                  <li class="cvd-sample-row">
+                    <span class="color-dot color-dot--red" aria-hidden="true"></span>
+                    <span>Estado de conexión</span>
+                  </li>
+                  <li class="cvd-sample-row">
+                    <span class="color-dot color-dot--green" aria-hidden="true"></span>
+                    <span>Estado de guardado</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cvd-example-card cvd-example-card--accessible">
+                <h4 class="cvd-example-title">Color + ícono + texto (accesible)</h4>
+                <ul class="cvd-sample-list">
+                  <li class="cvd-sample-row">
+                    <span class="status-pill status-pill--error">
+                      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                      </svg>
+                      Error
+                    </span>
+                    <span>Sin conexión al servidor</span>
+                  </li>
+                  <li class="cvd-sample-row">
+                    <span class="status-pill status-pill--ok">
+                      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="8.5 12.5 11 15 16 9.5"></polyline>
+                      </svg>
+                      Activo
+                    </span>
+                    <span>Guardado automático listo</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <nav class="scene-nav" aria-label="Navegación del Módulo 1">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-target="escena-1"
+            >
+              &larr; Volver al inicio
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-target="escena-3"
+            >
+              Siguiente: Tipografía y Alt-Text &rarr;
+            </button>
+          </nav>
+        </article>
+      </section>
+
+      <!-- Escena 3: Módulo 2 — Tipografía Legible y Texto Alternativo (Alt-Text) -->
+      <section
+        id="escena-3"
+        class="scene"
+        aria-labelledby="escena-3-titulo"
+        aria-hidden="true"
+        hidden
+      >
+        <article class="module-panel">
+          <p class="eyebrow-tag">Módulo 2 de 3</p>
+          <h2 id="escena-3-titulo" class="scene-title" tabindex="-1">
+            2. Tipografía Legible y Texto Alternativo (Alt-Text)
+          </h2>
+          <p class="scene-lead">
+            La forma en que presentamos el texto determina si una persona puede leer sin esfuerzo, mientras que el texto alternativo (<code>alt</code>) garantiza que quienes usan lectores de pantalla accedan al mismo significado que transmiten las imágenes y gráficos.
+          </p>
+
+          <!-- Bloque 1: Comparador de tipografía y lectura fácil -->
+          <section class="interactive-block" aria-labelledby="typo-compare-heading">
+            <div class="interactive-header">
+              <h3 id="typo-compare-heading" class="interactive-title">
+                Comparador de tipografía y lectura fácil
+              </h3>
+              <p class="interactive-desc">
+                Una fuente limpia de al menos 16&nbsp;px, interlineado de 1.5 y un ancho controlado (máximo 65 caracteres por línea) reducen el esfuerzo ocular en personas con <strong>baja visión</strong> o <strong>fatiga visual</strong>, evitando que el lector pierda el renglón al pasar de una línea a la siguiente.
+              </p>
+            </div>
+
+            <div class="typo-compare-grid">
+              <article class="typo-card typo-card--poor" aria-labelledby="typo-poor-title">
+                <header class="typo-card-header">
+                  <span class="typo-badge typo-badge--poor">No recomendado</span>
+                  <h4 id="typo-poor-title" class="typo-card-title">Ejemplo deficiente</h4>
+                  <p class="typo-specs">Cursiva decorativa &middot; 12px &middot; Interlineado 1.1 &middot; Sin límite de ancho</p>
+                </header>
+                <div class="typo-sample typo-sample--poor">
+                  <p>
+                    Cuando un párrafo utiliza tipografía ornamental muy pequeña, con líneas extremadamente pegadas entre sí y renglones que atraviesan toda la pantalla sin descanso visual, las personas con baja visión o cansancio ocular pierden rápidamente la ubicación de la línea actual, confunden letras similares y abandonan la lectura del contenido digital antes de completar la idea principal del recurso educativo.
+                  </p>
+                </div>
+              </article>
+
+              <article class="typo-card typo-card--good" aria-labelledby="typo-good-title">
+                <header class="typo-card-header">
+                  <span class="typo-badge typo-badge--good">WCAG 2.2 AAA</span>
+                  <h4 id="typo-good-title" class="typo-card-title">Ejemplo accesible</h4>
+                  <p class="typo-specs">Sans-serif limpia &middot; 16px &middot; Interlineado 1.5 &middot; Ancho controlado (60ch)</p>
+                </header>
+                <div class="typo-sample typo-sample--good">
+                  <p>
+                    Una fuente sans-serif clara de 16&nbsp;px con interlineado amplio (1.5) y líneas de longitud controlada facilita el barrido visual continuo. Así, quienes tienen baja visión o fatiga visual distinguen cada carácter con nitidez y mantienen el ritmo de lectura sin esfuerzo adicional.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Bloque 2: Taller práctico interactivo de Texto Alternativo (Alt-Text) -->
+          <section class="interactive-block" aria-labelledby="alttext-workshop-heading">
+            <div class="interactive-header">
+              <h3 id="alttext-workshop-heading" class="interactive-title">
+                Taller práctico: Texto Alternativo (Alt-Text)
+              </h3>
+              <p class="interactive-desc">
+                Observa el siguiente gráfico estadístico y elige la descripción alternativa que realmente comunique su información clave.
+              </p>
+            </div>
+
+            <figure class="chart-figure">
+              <svg
+                class="bar-chart-svg"
+                viewBox="0 0 640 230"
+                role="img"
+                aria-labelledby="chart-svg-title chart-svg-desc"
+              >
+                <title id="chart-svg-title">
+                  Dispositivos de acceso a contenidos educativos digitales
+                </title>
+                <desc id="chart-svg-desc">
+                  Gráfico de barras horizontales: Acceso desde teléfono móvil 78 por ciento; Acceso desde computador 22 por ciento.
+                </desc>
+
+                <!-- Fondo interno del gráfico -->
+                <rect x="0" y="0" width="640" height="230" rx="12" fill="#0F172A" />
+
+                <!-- Título visible dentro del gráfico -->
+                <text x="24" y="36" fill="#F8FAFC" font-size="17" font-weight="700" font-family="Inter, system-ui, sans-serif">
+                  Dispositivo principal de acceso a la plataforma
+                </text>
+
+                <!-- Barra 1: Teléfono móvil (78%) -->
+                <text x="24" y="78" fill="#E2E8F0" font-size="15" font-weight="600" font-family="Inter, system-ui, sans-serif">
+                  Acceso desde teléfono móvil: 78%
+                </text>
+                <rect x="24" y="90" width="520" height="32" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+                <rect x="24" y="90" width="406" height="32" rx="6" fill="#FBBF24" />
+                <text x="442" y="112" fill="#FBBF24" font-size="16" font-weight="800" font-family="Inter, system-ui, sans-serif">
+                  78%
+                </text>
+
+                <!-- Barra 2: Computador (22%) -->
+                <text x="24" y="158" fill="#E2E8F0" font-size="15" font-weight="600" font-family="Inter, system-ui, sans-serif">
+                  Acceso desde computador: 22%
+                </text>
+                <rect x="24" y="170" width="520" height="32" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+                <rect x="24" y="170" width="115" height="32" rx="6" fill="#38BDF8" />
+                <text x="151" y="192" fill="#38BDF8" font-size="16" font-weight="800" font-family="Inter, system-ui, sans-serif">
+                  22%
+                </text>
+              </svg>
+              <figcaption class="chart-caption">
+                Datos del ejemplo: Acceso desde teléfono móvil: 78% | Acceso desde computador: 22%.
+              </figcaption>
+            </figure>
+
+            <fieldset class="alttext-fieldset">
+              <legend class="alttext-question">
+                Una persona ciega navega con lector de pantalla. ¿Qué descripción alt-text debería escuchar al encontrar este gráfico?
+              </legend>
+
+              <div class="alttext-options">
+                <label class="alttext-option" for="alt-option-a">
+                  <input
+                    type="radio"
+                    id="alt-option-a"
+                    name="alttext-quiz"
+                    value="A"
+                  >
+                  <span class="alttext-option-letter">Opción A:</span>
+                  <span>"grafico_estadistico_final.png"</span>
+                </label>
+
+                <label class="alttext-option" for="alt-option-b">
+                  <input
+                    type="radio"
+                    id="alt-option-b"
+                    name="alttext-quiz"
+                    value="B"
+                  >
+                  <span class="alttext-option-letter">Opción B:</span>
+                  <span>"Imagen de unas barras amarillas y azules"</span>
+                </label>
+
+                <label class="alttext-option" for="alt-option-c">
+                  <input
+                    type="radio"
+                    id="alt-option-c"
+                    name="alttext-quiz"
+                    value="C"
+                  >
+                  <span class="alttext-option-letter">Opción C:</span>
+                  <span>"Gráfico de barras: el 78% de los estudiantes accede desde móvil y el 22% desde computador."</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div
+              id="alttext-feedback"
+              class="alttext-feedback"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <p class="alttext-feedback-title" id="alttext-feedback-title">
+                Selecciona una opción para recibir retroalimentación inmediata.
+              </p>
+              <p class="alttext-feedback-body" id="alttext-feedback-body">
+                Evalúa qué descripción comunica realmente los datos del gráfico a quien no puede verlo.
+              </p>
+            </div>
+          </section>
+
+          <nav class="scene-nav" aria-label="Navegación del Módulo 2">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-target="escena-2"
+            >
+              &larr; Anterior
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-target="escena-4"
+            >
+              Siguiente: Subtítulos y Navegación &rarr;
+            </button>
+          </nav>
+        </article>
+      </section>
+
+      <!-- Escena 4: Módulo 3 — Subtítulos, Transcripción y Navegación Clara -->
+      <section
+        id="escena-4"
+        class="scene"
+        aria-labelledby="escena-4-titulo"
+        aria-hidden="true"
+        hidden
+      >
+        <article class="module-panel">
+          <p class="eyebrow-tag">Módulo 3 de 3</p>
+          <h2 id="escena-4-titulo" class="scene-title" tabindex="-1">
+            3. Subtítulos, Transcripción y Navegación Clara
+          </h2>
+          <p class="scene-lead">
+            Los contenidos audiovisuales deben ofrecer subtítulos sincronizados y transcripción completa (WCAG 1.2.2), mientras que una estructura de encabezados ordenada y enlaces descriptivos permiten orientarse sin barreras mediante teclado o lector de pantalla.
+          </p>
+
+          <!-- Bloque 1: Simulador de recurso audiovisual accesible -->
+          <section class="interactive-block" aria-labelledby="video-sim-heading">
+            <div class="interactive-header">
+              <h3 id="video-sim-heading" class="interactive-title">
+                Simulador de recurso audiovisual accesible (15 s)
+              </h3>
+              <p class="interactive-desc">
+                Reproduce esta cápsula educativa simulada para observar los subtítulos sincronizados (Closed Captions) cada 5 segundos y despliega su transcripción íntegra bajo demanda.
+              </p>
+            </div>
+
+            <div class="video-player" role="region" aria-label="Reproductor simulado de cápsula educativa">
+              <div class="video-stage">
+                <div class="video-scene-visual">
+                  <span class="video-pill-badge" id="video-play-state">En pausa</span>
+                  <p class="video-slide-title" id="video-slide-title">
+                    Cápsula: Accesibilidad Audiovisual Universal
+                  </p>
+                  <p class="video-slide-sub" id="video-slide-sub">
+                    Presiona «Reproducir / Pausar demostración» para iniciar el recorrido de 15 segundos.
+                  </p>
+                </div>
+
+                <!-- Caja de subtítulos sincronizados (fondo negro 90% y texto #F8FAFC) -->
+                <div
+                  id="video-captions"
+                  class="cc-box"
+                  aria-live="polite"
+                  aria-atomic="true"
+                >
+                  [Subtítulos listos] Pulsa reproducir para mostrar los subtítulos sincronizados.
+                </div>
+              </div>
+
+              <div class="video-controls-bar">
+                <button
+                  type="button"
+                  id="btn-toggle-video"
+                  class="btn btn-primary"
+                  aria-pressed="false"
+                >
+                  Reproducir / Pausar demostración
+                </button>
+
+                <button
+                  type="button"
+                  id="btn-toggle-voice"
+                  class="btn btn-secondary btn-voice"
+                  aria-pressed="true"
+                >
+                  Voz narrada: Activada
+                </button>
+
+                <div class="video-progress-wrap">
+                  <div class="video-time-row">
+                    <span class="video-progress-label">Progreso del clip</span>
+                    <span id="video-time-display" class="video-time-display">00:00 / 00:15</span>
+                  </div>
+                  <div
+                    id="video-progressbar"
+                    class="video-progress-track"
+                    role="progressbar"
+                    aria-label="Progreso de la cápsula educativa"
+                    aria-valuemin="0"
+                    aria-valuemax="15"
+                    aria-valuenow="0"
+                    aria-valuetext="0 de 15 segundos"
+                  >
+                    <div id="video-progress-fill" class="video-progress-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="transcript-block">
+              <button
+                type="button"
+                id="btn-toggle-transcript"
+                class="btn btn-secondary"
+                aria-expanded="false"
+                aria-controls="transcript-panel"
+              >
+                Leer transcripción completa
+              </button>
+
+              <div
+                id="transcript-panel"
+                class="transcript-panel"
+                hidden
+              >
+                <div class="transcript-header">
+                  <h4 class="transcript-title">Transcripción íntegra (cumple WCAG 1.2.2)</h4>
+                  <span class="typo-badge typo-badge--good">Audio + Sonidos</span>
+                </div>
+                <ol class="transcript-list">
+                  <li>
+                    <strong class="transcript-time">[00:00 – 00:05]</strong>
+                    <span><em>[Música suave de introducción]</em> Bienvenida a esta cápsula sobre accesibilidad en video educativo.</span>
+                  </li>
+                  <li>
+                    <strong class="transcript-time">[00:05 – 00:10]</strong>
+                    <span><em>[Pausa breve]</em> Los subtítulos sincronizados benefician a personas sordas y a quienes ven contenidos sin audio.</span>
+                  </li>
+                  <li>
+                    <strong class="transcript-time">[00:10 – 00:15]</strong>
+                    <span><em>[Sonido de confirmación]</em> Acompañar el clip con transcripción completa garantiza acceso universal según WCAG 1.2.2.</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bloque 2: Comparador de navegación clara y estructura semántica -->
+          <section class="interactive-block" aria-labelledby="nav-compare-heading">
+            <div class="interactive-header">
+              <h3 id="nav-compare-heading" class="interactive-title">
+                Comparador de navegación clara y estructura semántica
+              </h3>
+              <p class="interactive-desc">
+                Quienes navegan con teclado o lector de pantalla suelen saltar entre encabezados y listas de enlaces. Si la jerarquía tiene saltos o los textos dicen «Haz clic aquí», la interfaz se vuelve confusa.
+              </p>
+            </div>
+
+            <div class="nav-compare-grid">
+              <article class="structure-card structure-card--poor" aria-labelledby="struct-poor-title">
+                <header class="typo-card-header">
+                  <span class="typo-badge typo-badge--poor">Estructura desordenada</span>
+                  <h4 id="struct-poor-title" class="typo-card-title">Saltos jerárquicos y enlaces genéricos</h4>
+                </header>
+
+                <div class="structure-tree">
+                  <div class="tree-node tree-node--ok">
+                    <span class="tag-chip tag-chip--neutral">&lt;h1&gt;</span>
+                    <span>Portal Educativo</span>
+                  </div>
+                  <div class="tree-node tree-node--warn">
+                    <span class="tag-chip tag-chip--warn">&lt;h4&gt;</span>
+                    <span>Recursos disponibles <em>(salta H2 y H3)</em></span>
+                  </div>
+                  <div class="tree-node tree-node--warn">
+                    <span class="tag-chip tag-chip--warn">&lt;a&gt;</span>
+                    <span class="fake-link-poor">Haz clic aquí</span>
+                  </div>
+                  <div class="tree-node tree-node--warn">
+                    <span class="tag-chip tag-chip--warn">&lt;a&gt;</span>
+                    <span class="fake-link-poor">Ver más</span>
+                  </div>
+                </div>
+
+                <p class="structure-note">
+                  Problema: los lectores de pantalla listan «Haz clic aquí» y «Ver más» sin contexto, y el salto de H1 a H4 hace creer que falta contenido intermedio.
+                </p>
+              </article>
+
+              <article class="structure-card structure-card--good" aria-labelledby="struct-good-title">
+                <header class="typo-card-header">
+                  <span class="typo-badge typo-badge--good">Estructura semántica</span>
+                  <h4 id="struct-good-title" class="typo-card-title">Jerarquía continua y acciones descriptivas</h4>
+                </header>
+
+                <div class="structure-tree">
+                  <div class="tree-node tree-node--good">
+                    <span class="tag-chip tag-chip--good">&lt;h1&gt;</span>
+                    <span>Portal Educativo</span>
+                  </div>
+                  <div class="tree-node tree-node--good tree-node--indent-1">
+                    <span class="tag-chip tag-chip--good">&lt;h2&gt;</span>
+                    <span>Módulo de Accesibilidad</span>
+                  </div>
+                  <div class="tree-node tree-node--good tree-node--indent-2">
+                    <span class="tag-chip tag-chip--good">&lt;h3&gt;</span>
+                    <span>Materiales descargables</span>
+                  </div>
+                  <div class="tree-node tree-node--good tree-node--indent-2">
+                    <span class="tag-chip tag-chip--good">&lt;button&gt;</span>
+                    <span class="fake-link-good">Descargar guía de contraste WCAG</span>
+                  </div>
+                </div>
+
+                <p class="structure-note">
+                  Beneficio: la progresión H1 &rarr; H2 &rarr; H3 crea un mapa mental claro y cada botón anuncia exactamente qué acción ejecuta.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <nav class="scene-nav" aria-label="Navegación del Módulo 3">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-target="escena-3"
+            >
+              &larr; Anterior
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-target="escena-5"
+            >
+              Siguiente: Checklist Final &rarr;
+            </button>
+          </nav>
+        </article>
+      </section>
+
+      <!-- Escena 5: Cierre — Checklist Interactivo de Accesibilidad -->
+      <section
+        id="escena-5"
+        class="scene"
+        aria-labelledby="escena-5-titulo"
+        aria-hidden="true"
+        hidden
+      >
+        <article class="module-panel">
+          <p class="eyebrow-tag eyebrow-tag--success">Cierre</p>
+          <h2 id="escena-5-titulo" class="scene-title" tabindex="-1">
+            4. Checklist Interactivo de Accesibilidad (10 Puntos)
+          </h2>
+          <p class="scene-lead">
+            Utiliza esta lista de verificación autoevaluable para auditar cualquier recurso multimedia antes de publicarlo. Marca cada criterio cumplido para calcular tu nivel de conformidad.
+          </p>
+
+          <!-- Panel de progreso dinámico -->
+          <section class="checklist-progress-card" aria-labelledby="checklist-progress-heading">
+            <div class="checklist-progress-top">
+              <div>
+                <h3 id="checklist-progress-heading" class="checklist-progress-title">
+                  Avance de verificación
+                </h3>
+                <p
+                  id="checklist-counter"
+                  class="checklist-counter"
+                  aria-live="polite"
+                  aria-atomic="true"
+                >
+                  0 de 10 criterios verificados - 0%
+                </p>
+              </div>
+              <button
+                type="button"
+                id="btn-reset-checklist"
+                class="btn btn-secondary"
+              >
+                Reiniciar checklist
+              </button>
+            </div>
+
+            <div
+              id="checklist-progressbar"
+              class="checklist-progress-track"
+              role="progressbar"
+              aria-label="Porcentaje de criterios de accesibilidad verificados"
+              aria-valuemin="0"
+              aria-valuemax="10"
+              aria-valuenow="0"
+              aria-valuetext="0 de 10 criterios verificados, 0 por ciento"
+            >
+              <div id="checklist-progress-fill" class="checklist-progress-fill"></div>
+            </div>
+
+            <div
+              id="checklist-congrats"
+              class="checklist-congrats"
+              role="status"
+              aria-live="polite"
+              hidden
+            >
+              <span class="congrats-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="8 12.5 11 15.5 16.5 9.5"></polyline>
+                </svg>
+              </span>
+              <div>
+                <p class="congrats-title">¡Felicitaciones! Has completado los 10 puntos de accesibilidad</p>
+                <p class="congrats-body">
+                  Tu contenido digital integra contraste suficiente, lectura clara, alternativas textuales, soporte audiovisual y navegación universal por teclado.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Lista de 10 casillas agrupadas por categorías -->
+          <div class="checklist-groups">
+            <fieldset class="checklist-group">
+              <legend class="checklist-legend">Color y Contraste</legend>
+              <ul class="checklist-list">
+                <li>
+                  <label class="checklist-item" for="check-item-1">
+                    <input type="checkbox" id="check-item-1" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>1.</strong> Contraste de texto normal &ge; 4.5:1 (AA) o &ge; 7:1 (AAA).
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checklist-item" for="check-item-2">
+                    <input type="checkbox" id="check-item-2" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>2.</strong> Ningún mensaje depende únicamente del color (incluye íconos o texto).
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="checklist-group">
+              <legend class="checklist-legend">Tipografía y Lectura</legend>
+              <ul class="checklist-list">
+                <li>
+                  <label class="checklist-item" for="check-item-3">
+                    <input type="checkbox" id="check-item-3" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>3.</strong> Tamaño de fuente base &ge; 16px en cuerpo de texto.
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checklist-item" for="check-item-4">
+                    <input type="checkbox" id="check-item-4" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>4.</strong> Interlineado mínimo de 1.5 y párrafos breves.
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="checklist-group">
+              <legend class="checklist-legend">Imágenes y Alt-Text</legend>
+              <ul class="checklist-list">
+                <li>
+                  <label class="checklist-item" for="check-item-5">
+                    <input type="checkbox" id="check-item-5" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>5.</strong> Todas las imágenes informativas tienen texto alternativo (alt-text) descriptivo.
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checklist-item" for="check-item-6">
+                    <input type="checkbox" id="check-item-6" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>6.</strong> Las imágenes puramente decorativas se marcan con <code>alt=""</code>.
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="checklist-group">
+              <legend class="checklist-legend">Audio y Video</legend>
+              <ul class="checklist-list">
+                <li>
+                  <label class="checklist-item" for="check-item-7">
+                    <input type="checkbox" id="check-item-7" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>7.</strong> Los videos incluyen subtítulos sincronizados (Closed Captions).
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checklist-item" for="check-item-8">
+                    <input type="checkbox" id="check-item-8" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>8.</strong> Existe transcripción textual accesible para contenidos de audio o video.
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="checklist-group">
+              <legend class="checklist-legend">Navegación y Teclado</legend>
+              <ul class="checklist-list">
+                <li>
+                  <label class="checklist-item" for="check-item-9">
+                    <input type="checkbox" id="check-item-9" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>9.</strong> Los títulos siguen un orden lógico (H1, H2, H3) y los enlaces son descriptivos.
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checklist-item" for="check-item-10">
+                    <input type="checkbox" id="check-item-10" class="checklist-input">
+                    <span class="checklist-box" aria-hidden="true"></span>
+                    <span class="checklist-text">
+                      <strong>10.</strong> Todos los botones funcionan con teclado (Tab / Enter) y foco visible.
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <nav class="scene-nav" aria-label="Navegación de Cierre">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-target="escena-4"
+            >
+              &larr; Anterior
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-target="escena-1"
+            >
+              Volver al inicio
+            </button>
+          </nav>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-credits">
+        <p class="footer-title">IncluyeWeb: Guía Multimedia Interactiva sobre Accesibilidad e Inclusión en Contenidos Digitales</p>
+        <p class="footer-meta">
+          Autor: <strong>Samuel Eduardo Nossa Ramirez</strong> &middot;
+          Curso: Introducción a la Ingeniería Multimedia &middot;
+          Universidad Nacional Abierta y a Distancia (UNAD) &middot;
+          Código: 202456784
+        </p>
+      </div>
+      <div class="footer-reference">
+        <p>
+          Basado en las pautas internacionales de accesibilidad web
+          <a
+            href="https://www.w3.org/TR/WCAG22/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            W3C WCAG 2.2 (abre en una nueva pestaña)
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
